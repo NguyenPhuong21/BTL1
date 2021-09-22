@@ -1,0 +1,349 @@
+:root {
+  --green: #08e1ae;
+  --white: #fff;
+  --black: #000;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bg {
+  background-color: var(--green);
+  background-image: linear-gradient(315deg, #08e1ae 0%, #98de5b 74%);
+}
+.btn-outline-green {
+  color: var(--green) !important;
+  background-color: white !important;
+}
+.btn-outline-green:hover {
+  color: var(--black) !important;
+  border: 1px solid var(--green);
+}
+.btn {
+  position: relative;
+  z-index: 1;
+  border: none !important;
+}
+.btn::before {
+  content: "";
+  background-color: var(--green);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  transform: scaleX(0);
+
+  transition: transform 1000ms;
+  transform-origin: left;
+  border-radius: 50rem;
+}
+.btn:hover::before {
+  transform: scaleX(1);
+}
+
+/*bắt đầu code từ đây*/
+
+
+/* BANNER */
+header .banner {
+  padding-top: 5rem;
+}
+header .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+header .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header img {
+  max-width: 80%;
+  animation: tea 3s linear infinite alternate;
+}
+@keyframes tea {
+  0%,
+  100% {
+    transform: translateY(1rem);
+  }
+  50% {
+    transform: translateY(3rem);
+  }
+}
+
+
+/*bắt đầu code từ đây Phương */
+.btn__text1 {
+  width: 100%;
+  height:100px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #444;
+  margin: 0px 5px 0px 10px ;
+  
+}
+.bottom__text1 button{
+  width:100%;
+
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+
+.slide_hot img
+{
+	height:210px;
+}
+.slide_hot a
+{
+	text-decoration:none;
+	color:#000;
+}
+.slide_hot a p
+{
+	text-align:center;
+	font-weight:bold;
+}
+.sale
+{
+	color:#fff;
+	border-radius:20px;
+    
+}
+.slide_hot h6{
+     position:absolute;
+     top:0;
+     left:0;
+     background:red;
+     color:#fff;
+     padding:10px ;
+     border-radius: 0px 0px 30px 0px;
+}
+.slide_hot .s:hover{
+    box-shadow: 5px 5px 5px 5px #7edf6b;
+}
+.card-img-top{
+  height:180px;
+}
+.card:hover{
+  box-shadow: 5px 5px 5px 5px #7edf6b ;
+}
+.row_products{
+  background-color:#F5F5F5 ;
+
+}
+.home__products{
+    
+    margin-bottom: 100px ;
+}
+.wrapper{
+  background-color:#F5F5F5;
+}
+.col-2 .s{
+    width:16.6667%;
+    height:360px;
+}
+#items1 img{
+  
+  width: 100%;
+  height:160px;
+}
+.iteams4__link {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px 0px;
+  background: pink;
+  text-align: center;
+  border-radius: 50px;
+  margin-bottom:50px;
+}
+.iteams4__link li{
+  width: 6%;
+  
+}
+.iteams4__link li a{
+  text-decoration: none;
+  color: #000;
+  display: block;
+  
+}
+.iteams4__link li a img{
+ width: 48px;
+ height:48px;
+ margin-bottom: 15px;
+}
+/* SCROLL-TOP */
+.scroll-top {
+  /* width: 3rem; */
+  background-color: var(--green);
+  cursor: pointer;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+
+  position: fixed;
+  bottom: 2rem;
+  right: 1.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scroll-top i {
+  color: var(--white);
+  font-size: 2rem;
+  padding: 0.4rem 0.8rem;
+  animation: tea;
+}
+.scroll-top:hover i {
+  transform: translateY(-15%);
+  transition: 500ms linear;
+}
+/* CSS về footer */
+.bg_2{
+  background: url(https://img2.thuthuatphanmem.vn/uploads/2019/01/20/nhung-background-den-dep-nhat_034513345.jpg);     
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 20px 100px;
+  justify-content: space-between;
+  color: #fff
+ }
+ p1{
+  color:#666666
+}
+ .top{
+   display:flex;
+   justify-content: space-between;
+ }
+.top_1 i{
+  float: left;
+  font-size: 65px;
+  margin-right: 20px;
+  color:#663399
+}
+.top_1 a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  position: relative;
+  display:flex;
+  font-weight: bold;
+}
+.top_1 a:hover{
+  color:greenyellow
+}
+.top_2 i{
+  float: left;
+  font-size: 65px;
+  margin-right: 20px;
+  color:#663399
+}
+.top_2 a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  position: relative;
+  display:flex;
+  font-weight: bold;
+}
+.top_2 a:hover{
+  color:greenyellow
+}
+.top_3 i{
+  float: left;
+  font-size: 65px;
+  margin-right: 20px;
+  color:#663399
+}
+.top_3 a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  position: relative;
+  display:flex;
+  font-weight: bold;
+}
+.top_3 a:hover{
+  color:greenyellow
+}
+.mid{
+  display:flex;
+  justify-content: space-between;
+  background: #222222;
+  margin: 30px 0px;
+ }
+.social-icon{
+ display: flex;
+ }
+.mid h1{
+  font-size: 25px;
+  margin: 10px 0px;
+  text-align:center;
+}
+.social-icon {
+  float: right;
+  margin-left: 800px;
+}
+.social-icon li {
+  list-style: none;
+  padding-top:10px;
+  float:right;
+ }
+.social-icon li a{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background:#33CC66;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  text-decoration: none;
+  border-radius: 200px;
+ }
+.social-icon li a:hover{
+  background: #66FF66;
+ }
+.social-icon li a .fa{
+  color: #fff;
+  font-size: 20px;
+ }
+.bot{
+  display:flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.bot h1{
+  font-size: 20px;
+}
+.gioithieu p{
+  color:#666666;
+}
+.product a{
+  text-decoration: none;
+  color:#666666;
+  display:block;
+  display: flex;
+}
+.product a:hover{
+  color:greenyellow;
+}
+.link a{
+  text-decoration: none;
+  color:#666666;
+  display:block;
+  display: flex;
+}
+.link a:hover{
+  color:greenyellow;
+}
